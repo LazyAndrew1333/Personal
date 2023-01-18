@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class combined {
 	
+	static boolean choiceCorrect = false;
+	
 	public static long factorial(long n) {
 		if (n <= 1) {
 			return 1;
@@ -24,31 +26,37 @@ public class combined {
 		System.out.println("Choose: Factorial || Euclid");
 		String choice = sc.next();
 		
-		if (choice.equalsIgnoreCase("factorial")) {
-			
-			System.out.print("Input: ");
-			String input = sc.next();
-			sc.close();
-			
-			int numberOfCharacter = input.length();
-			
-			long result = factorial(numberOfCharacter);
-			
-			System.out.println(result);
-			
-		} else if (choice.equalsIgnoreCase("euclid")) {
-			
-			System.out.print("Enter first number: ");
-			int number1 = sc.nextInt();
-			
-			System.out.print("Enter second number: ");
-			int number2 = sc.nextInt();
-			sc.close();
-			
-			int result = gcd(number1, number2);
-			
-			System.out.println(result);
-			
+		while (choiceCorrect != true;) {
+			if (choice.equalsIgnoreCase("factorial")) {
+				
+				choiceCorrect = true;
+				
+				System.out.print("Input: ");
+				String input = sc.next();
+				sc.close();
+				
+				int numberOfCharacter = input.length();
+				
+				long result = factorial(numberOfCharacter);
+				
+				System.out.println(result);
+				
+			} else if (choice.equalsIgnoreCase("euclid")) {
+				
+				choiceCorrect = true;
+				
+				System.out.print("Enter first number: ");
+				int number1 = sc.nextInt();
+				
+				System.out.print("Enter second number: ");
+				int number2 = sc.nextInt();
+				sc.close();
+				
+				int result = gcd(number1, number2);
+				
+				System.out.println(result);
+				
+			}
 		}
 	}
 }
