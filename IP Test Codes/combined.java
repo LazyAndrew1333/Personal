@@ -23,10 +23,10 @@ public class combined {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Choose: Factorial || Euclid");
-		String choice = sc.next();
-		
 		while (choiceCorrect != true) {
+			System.out.println("Choose: Factorial || Euclid");
+			String choice = sc.next();
+			
 			if (choice.equalsIgnoreCase("factorial")) {
 				
 				choiceCorrect = true;
