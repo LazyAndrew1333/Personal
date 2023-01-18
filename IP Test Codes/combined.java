@@ -26,7 +26,7 @@ public class combined {
 		System.out.println("Choose: Factorial || Euclid");
 		String choice = sc.next();
 		
-		while (choiceCorrect != true;) {
+		while (choiceCorrect != true) {
 			if (choice.equalsIgnoreCase("factorial")) {
 				
 				choiceCorrect = true;
